@@ -2,7 +2,7 @@
 
 ## Live Site: https://talk-route-648b1.web.app/
 
-### Server repo: https://github.com/kaziabulhasib/talkroute-server
+### Server repo: https://github.com/farjanasabiha/talk-route-website-server
 
 ### Technology used:
 
