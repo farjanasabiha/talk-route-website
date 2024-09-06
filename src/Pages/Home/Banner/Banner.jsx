@@ -1,12 +1,8 @@
 // import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import banner5 from "../../../assets/home/image-01.jfif";
-import banner2 from "../../../assets/home/image-02.png";
-import banner3 from "../../../assets/home/image-03.jfif";
-import banner4 from "../../../assets/home/image-04.png";
-import banner1 from "../../../assets/home/image-05.jfif";
-import banner6 from "../../../assets/home/image-06.jfif";
+
+
 // import { FaMagnifyingGlass } from "react-icons/fa6";
 
 const Banner = ({ onSearch }) => {
@@ -22,7 +18,7 @@ const Banner = ({ onSearch }) => {
   // };
 
   return (
-    <div className='mb-8 mt-36'>
+    <div className="mb-8 mt-36">
       {/* <div className='mb-4 mt-24'>
         <form
           onSubmit={handleSubmit}
@@ -39,28 +35,54 @@ const Banner = ({ onSearch }) => {
           </button>
         </form>
       </div> */}
+
       <Carousel
-        className='top-0 h-full'
+        className="top-0 h-full"
         autoPlay={true}
         interval={2000}
-        infiniteLoop={true}>
-        <div className='h-full'>
-          <img className='h-full' src={banner1} alt='banner1' />
+        infiniteLoop={true}
+      >
+        <div className="h-full">
+          <img
+            className="h-full"
+            src="https://i.ibb.co.com/MB7GqH6/HD-wallpaper-people-business-meeting-talking-others.jpg"
+            alt="banner1"
+          />
         </div>
-        <div className='h-full'>
-          <img className='h-full' src={banner2} alt='banner2' />
+        <div className="h-full">
+          <img
+            className="h-full"
+            src="https://i.ibb.co.com/PW5rn2c/istockphoto-1297168907-612x612.jpg"
+            alt="banner2"
+          />
         </div>
-        <div className='h-full'>
-          <img className='h-full' src={banner3} alt='banner3' />
+        <div className="h-full">
+          <img
+            className="h-full"
+            src="https://i.ibb.co.com/521QqtM/istockphoto-1272690621-612x612.jpg"
+            alt="banner3"
+          />
         </div>
-        <div className='h-full'>
-          <img className='h-full' src={banner4} alt='banner4' />
+        <div className="h-full">
+          <img
+            className="h-full"
+            src="https://i.ibb.co.com/P59ZBYp/depositphotos-96557742-stock-photo-business-team-with-hands-together.jpg"
+            alt="banner4"
+          />
         </div>
-        <div className='h-full'>
-          <img className='h-full' src={banner5} alt='banner5' />
+        <div className="h-full">
+          <img
+            className="h-full"
+            src="https://i.ibb.co.com/W5Jcgy1/A0-A14528-398-D-4-A47-9494-5038-CD72-B0-B6.jpg"
+            alt="banner5"
+          />
         </div>
-        <div className='h-full'>
-          <img className='h-full' src={banner6} alt='banner6' />
+        <div className="h-full">
+          <img
+            className="h-full"
+            src="https://i.ibb.co.com/P656MW5/istockphoto-863497498-612x612.jpg"
+            alt="banner6"
+          />
         </div>
       </Carousel>
     </div>
