@@ -52,7 +52,7 @@ const PostCard = ({ post }) => {
         onClick={handleClick}
         className="relative p-6 mx-auto bg-base-100 group hover:bg-[#ff7226] drop-shadow rounded-lg  space-y-8    hover:cursor-pointer mb-4 mr-4 border-b-2  border-b-[#ff7226] "
       >
-        <button className="btn btn-sm bg-[#ff7226] hover:bg-blue-600  px-4 text-white text-sm absolute top-2 right-2 ">
+        <button className="btn btn-sm group-hover:bg-[#ff7226] border border-[#ff7226] bg-transparent group-hover:text-white  px-4 text-[#ff7226] text-sm absolute top-2 left-4 ">
           {postTag}
         </button>
         <article className="space-y-8 ">
@@ -64,7 +64,6 @@ const PostCard = ({ post }) => {
               data-tooltip-content={postTitle}
               data-tooltip-variant="info"
             >
-              {" "}
               <h1
                 className="text-xl font-bold md:text-2xl text-center h-10 group-hover:text-white text-[#ff7226] "
                 // title={postTitle}

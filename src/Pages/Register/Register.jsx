@@ -1,4 +1,4 @@
-import { FcGoogle } from "react-icons/fc";
+// import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router-dom";
 
 import toast from "react-hot-toast";
@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet-async";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const Register = () => {
-  const { signInWithGoogle, createUser, updateUserProfile } = useAuth();
+  const { createUser, updateUserProfile } = useAuth();
 
   const navigate = useNavigate();
   const axiosPublic = useAxiosPublic();
@@ -69,7 +69,7 @@ const Register = () => {
   return (
     <div>
       <Helmet>
-        <title>TalkRoute | Register</title>
+        <title>Discussion Zone | Register</title>
       </Helmet>
       <div className="hero min-h-screen  ">
         <div className="hero-content flex items-center justify-center flex-col lg:flex-row lg:gap-24 gap-4  ">

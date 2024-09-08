@@ -44,76 +44,78 @@ const MakeAnnouncement = () => {
   return (
     <div>
       <Helmet>
-        <title>TalkRoute | Announcement</title>
+        <title>Discussion Zone | Announcement</title>
       </Helmet>
       <div>
-        <h1 className='lg:text-3xl  text-xl text-center font-semibold my-16 text-gray-700'>
+        <h1 className="lg:text-3xl  text-xl text-center font-semibold my-16 text-gray-700">
           Post an Announcement
         </h1>
         <form
           onSubmit={handleAnnouncement}
-          className='p-8 my-6 max-w-screen-sm mx-auto shadow-lg rounded-lg'>
+          className="p-8 my-6 max-w-screen-sm mx-auto shadow-lg rounded-lg"
+        >
           <div>
             <img
-              className='w-16 h-16 rounded-full'
+              className="w-16 h-16 rounded-full"
               src={
                 user?.photoURL ||
                 "https://i.ibb.co/K6n8jh8/Profile-Male-PNG.png"
               }
-              alt=''
+              alt=""
             />
           </div>
-          <label className='form-control w-full my-4 '>
-            <span className='label-text my-4 text-xl font-semibold'>Title</span>
+          <label className="form-control w-full my-4 ">
+            <span className="label-text my-4 text-xl font-semibold">Title</span>
             <input
-              type='text'
-              placeholder='Title'
-              className='input input-bordered w-full '
-              name='title'
+              type="text"
+              placeholder="Title"
+              className="input input-bordered w-full "
+              name="title"
             />
           </label>
 
-          <div className='flex flex-col lg:flex-row gap-4 '>
+          <div className="flex flex-col lg:flex-row gap-4 ">
             {/* Name */}
-            <label className='form-control w-full my-4 '>
-              <span className='label-text my-4 text-xl font-semibold'>
+            <label className="form-control w-full my-4 ">
+              <span className="label-text my-4 text-xl font-semibold">
                 Author Name
               </span>
               <input
                 defaultValue={user?.displayName}
                 disabled
-                type='text'
-                className='input input-bordered w-full '
-                name='authorName'
+                type="text"
+                className="input input-bordered w-full "
+                name="authorName"
               />
             </label>
 
             {/* Email */}
-            <label className='form-control w-full my-4 '>
-              <span className='label-text my-4 text-xl font-semibold'>
+            <label className="form-control w-full my-4 ">
+              <span className="label-text my-4 text-xl font-semibold">
                 Author Email
               </span>
               <input
                 defaultValue={user?.email}
                 disabled
-                type='text'
-                className='input input-bordered w-full '
-                name='authorEmail'
+                type="text"
+                className="input input-bordered w-full "
+                name="authorEmail"
               />
             </label>
           </div>
           {/* Text area */}
-          <label className='form-control w-full my-4 '>
-            <span className='label-text my-4 text-xl font-semibold'>
+          <label className="form-control w-full my-4 ">
+            <span className="label-text my-4 text-xl font-semibold">
               Description
             </span>
             <textarea
-              placeholder='Description'
-              className='textarea textarea-bordered textarea-lg w-full '
-              name='description'></textarea>
+              placeholder="Description"
+              className="textarea textarea-bordered textarea-lg w-full "
+              name="description"
+            ></textarea>
           </label>
 
-          <button className='btn bg-gray-600 hover:bg-gray-700 text-white'>
+          <button className="btn bg-gray-600 hover:bg-gray-700 text-white">
             Submit
           </button>
         </form>

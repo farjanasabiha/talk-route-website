@@ -57,7 +57,7 @@ const MyPost = () => {
   return (
     <div>
       <Helmet>
-        <title>TalkRoute | MyPost</title>
+        <title>Discussion Zone | MyPost</title>
       </Helmet>
       <div className="lg:px-24 px-2 lg:my-16 my-2">
         <h1 className="text-4xl text-center ">Total Posts : {posts.length}</h1>

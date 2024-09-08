@@ -70,7 +70,7 @@ const Login = () => {
   return (
     <div>
       <Helmet>
-        <title>TalkRoute | Login</title>
+        <title>Discussion Zone | Login</title>
       </Helmet>
       <div className="hero min-h-screen  ">
         <div className="hero-content flex items-center justify-center  flex-col lg:flex-row gap-24  ">
@@ -119,7 +119,7 @@ const Login = () => {
               </div>
               <div className="flex items-center justify-center gap-5">
                 <div
-                  onClick={handleGithubLogin}
+                  onClick={handleGoogleLogin}
                   className="flex justify-center items-center py-2 gap-4 border-[#f1563a] border rounded-md w-full mx-auto p-1 cursor-pointer mt-4 "
                 >
                   <h1 className="text-xl">

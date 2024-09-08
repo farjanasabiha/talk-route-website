@@ -39,7 +39,7 @@
 //   return (
 //     <div>
 //       <Helmet>
-//         <title>TalkRoute | Add Post</title>
+//         <title>Discussion Zone | Add Post</title>
 //       </Helmet>
 //       <div>
 //         <form onSubmit={handleAddPost} className='px-8 max-w-screen-sm mx-auto'>

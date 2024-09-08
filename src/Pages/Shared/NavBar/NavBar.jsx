@@ -3,7 +3,7 @@ import useAuth from "../../../hooks/useAuth";
 import toast from "react-hot-toast";
 import { RiKakaoTalkLine } from "react-icons/ri";
 
-import { MdNotificationAdd } from "react-icons/md";
+// import { MdNotificationAdd } from "react-icons/md";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import Notimodal from "../../../Components/notimodal/Notimodal";
@@ -106,7 +106,7 @@ const NavBar = () => {
         <Link to="/" className="flex justify-center items-center gap-4 ">
           {/* <img src="/logo.png" alt="" className="w-12 h-12 " /> */}
           <RiKakaoTalkLine className="w-14 h-14 text-[#ff7226]" />
-          <p className="text-2xl text-[#ff7226] font-bold">TalkRoute</p>
+          <p className="text-2xl text-[#ff7226] font-bold">Discussion Zone</p>
         </Link>
       </div>
       <div className="navbar-center  hidden lg:flex lg:items-center ">

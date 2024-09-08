@@ -51,7 +51,7 @@ const AddNewPost = () => {
   return (
     <div>
       <Helmet>
-        <title>TalkRoute | Add Post</title>
+        <title>Discussion Zone | Add Post</title>
       </Helmet>
       <div className="">
         <div className="my-12">

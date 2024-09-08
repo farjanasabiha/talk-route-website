@@ -4,7 +4,8 @@ import useAdmin from "../hooks/useAdmin";
 import toast from "react-hot-toast";
 
 const Dashboard = () => {
-  const { user, logOut } = useAuth();
+  // const { user, logOut } = useAuth();
+  const {  logOut } = useAuth();
   const navigate = useNavigate();
   //  make admin from db
   const [isAdmin] = useAdmin();

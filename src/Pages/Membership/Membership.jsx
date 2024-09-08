@@ -5,7 +5,7 @@ const Membership = () => {
   return (
     <div>
       <Helmet>
-        <title>TalkRoute | MemberShip</title>
+        <title>Discussion Zone | MemberShip</title>
       </Helmet>
       <div className="flex items-center justify-center h-screen">
         <section className="">

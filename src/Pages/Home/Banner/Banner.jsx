@@ -62,7 +62,7 @@ const Banner = ({ onSearch }) => {
             src="https://i.ibb.co.com/521QqtM/istockphoto-1272690621-612x612.jpg"
             alt="banner3"
           />
-        </div>
+        </div> 
         <div className="h-full">
           <img
             className="h-full"

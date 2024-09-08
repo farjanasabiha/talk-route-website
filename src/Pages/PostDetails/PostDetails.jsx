@@ -123,77 +123,82 @@ const PostDetails = () => {
   return (
     <div>
       <Helmet>
-        <title>TalkRoute | PostDetails</title>
+        <title>Discussion Zone | PostDetails</title>
       </Helmet>
-      <article className='max-w-2xl mx-auto space-y-12 dark:bg-gray-100 dark:text-gray-900 border mt-16 px-20 py-16'>
-        <div className='w-full mx-auto space-y-4 '>
-          <h1 className='text-2xl font-bold leading-tight md:text-3xl'>
+      <article className="max-w-2xl mx-auto space-y-12 dark:bg-gray-100 dark:text-gray-900 border mt-16 px-20 py-16">
+        <div className="w-full mx-auto space-y-4 ">
+          <h1 className="text-2xl font-bold leading-tight md:text-3xl">
             {postTitle}
           </h1>
-          <p className='text-sm text-center dark:text-gray-600'>
+          <p className="text-sm text-center dark:text-gray-600">
             by
             <a
-              rel='noopener noreferrer'
-              href='#'
-              target='_blank'
-              className='underline text-blue-700'>
-              <span className='mx-2'> {authorName} </span>
+              rel="noopener noreferrer"
+              href="#"
+              target="_blank"
+              className="underline text-blue-700"
+            >
+              <span className="mx-2"> {authorName} </span>
             </a>
             on
-            <span className='mx-2'> {formatPostTime(postTime)} </span>
+            <span className="mx-2"> {formatPostTime(postTime)} </span>
           </p>
         </div>
-        <div className='dark:text-gray-800'>
+        <div className="dark:text-gray-800">
           <p>{postDescription}</p>
         </div>
-        <div className='pt-2 border-t mb-6 py-4'>
+        <div className="pt-2 border-t mb-6 py-4">
           <div>
             <h1>#{postTag}</h1>
           </div>
-          <div className='flex flex-col items-center justify-center space-y-4 md:space-y-0 md:space-x-6 md:flex-row'>
+          <div className="flex flex-col items-center justify-center space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
             <img
               src={authorImage}
-              alt='Author Image'
-              className='self-center flex-shrink-0 w-24 h-24 p-2 bg-white  border-2 border-slate-600 rounded-full md:justify-self-start '
+              alt="Author Image"
+              className="self-center flex-shrink-0 w-24 h-24 p-2 bg-white  border-2 border-slate-600 rounded-full md:justify-self-start "
             />
-            <div className='flex flex-col justify-center'>
-              <h4 className='text-3xl font-bold'>{authorName}</h4>
+            <div className="flex flex-col justify-center">
+              <h4 className="text-3xl font-bold">{authorName}</h4>
             </div>
           </div>
-          <div className='flex justify-between pt-12 space-x-4 align-center'>
+          <div className="flex justify-between pt-12 space-x-4 align-center">
             <a
-              title='Make a Comment'
-              rel='noopener noreferrer'
-              href='#comment-section'
-              aria-label='Comment'
-              className='p-4 rounded-md text-3xl border text-center hover:bg-gray-700 hover:text-white'
-              onClick={handleCommentIconClick}>
+              title="Make a Comment"
+              rel="noopener noreferrer"
+              href="#comment-section"
+              aria-label="Comment"
+              className="p-4 rounded-md text-3xl border text-center hover:bg-gray-700 hover:text-white"
+              onClick={handleCommentIconClick}
+            >
               <FaComment />
             </a>
             <a
-              title='Down Vote'
-              rel='noopener noreferrer'
-              href='#'
+              title="Down Vote"
+              rel="noopener noreferrer"
+              href="#"
               onClick={handleUpVote}
-              className='p-4 rounded-md text-3xl border'>
+              className="p-4 rounded-md text-3xl border"
+            >
               <BiUpvote />
             </a>
             <a
-              title='Down Vote'
+              title="Down Vote"
               onClick={handleDownVote}
-              rel='noopener noreferrer'
-              href='#'
-              className='p-4 rounded-md text-3xl border'>
+              rel="noopener noreferrer"
+              href="#"
+              className="p-4 rounded-md text-3xl border"
+            >
               <BiDownvote />
             </a>
 
             <a
-              rel='noopener noreferrer'
-              title='Share to Facebook'
-              href='#'
+              rel="noopener noreferrer"
+              title="Share to Facebook"
+              href="#"
               onClick={handleShareClick}
-              aria-label='Share'
-              className='p-4 rounded-md text-3xl border hover:bg-gray-700 hover:text-white'>
+              aria-label="Share"
+              className="p-4 rounded-md text-3xl border hover:bg-gray-700 hover:text-white"
+            >
               {user ? (
                 <FacebookShareButton url={shareUrl}>
                   <FaRegShareFromSquare />
@@ -204,11 +209,11 @@ const PostDetails = () => {
             </a>
           </div>
         </div>
-        <div className='divider'></div>
+        <div className="divider"></div>
         <CommentSection
           postTitle={postTitle}
           postId={postId}
-          id='comment-section'
+          id="comment-section"
           commentTextAreaRef={commentTextAreaRef}
         />
       </article>
