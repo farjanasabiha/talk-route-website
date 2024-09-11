@@ -5,10 +5,11 @@ import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import { Helmet } from "react-helmet-async";
-import useAxiosPublic from "../../hooks/useAxiosPublic";
+import useAxiosPublic from "../../hooks/useAxiosPublic"; 
+import { FcGoogle } from 'react-icons/fc';
 
 const Register = () => {
-  const { createUser, updateUserProfile } = useAuth();
+  const { createUser, updateUserProfile, signInWithGoogle } = useAuth();
 
   const navigate = useNavigate();
   const axiosPublic = useAxiosPublic();
@@ -52,20 +53,20 @@ const Register = () => {
     }
   };
 
-  // const handleGoogleLogin = () => {
-  //   signInWithGoogle().then((result) => {
-  //     console.log(result.user);
-  //     const userINfo = {
-  //       email: result.user?.email,
-  //       name: result.user?.displayName,
-  //     };
-  //     axiosPublic.post("/users", userINfo).then((res) => {
-  //       console.log(res.data);
-  //       navigate("/");
-  //       toast.success("Login Successful!");
-  //     });
-  //   });
-  // };
+  const handleGoogleLogin = () => {
+    signInWithGoogle().then((result) => {
+      console.log(result.user);
+      const userINfo = {
+        email: result.user?.email,
+        name: result.user?.displayName,
+      };
+      axiosPublic.post("/users", userINfo).then((res) => {
+        console.log(res.data);
+        navigate("/");
+        toast.success("Login Successful!");
+      });
+    });
+  };
   return (
     <div>
       <Helmet>
@@ -185,7 +186,7 @@ const Register = () => {
                 </Link>
               </div>
             </div>
-            {/* <div
+            <div
               onClick={handleGoogleLogin}
               className="flex justify-center items-center gap-4 bg-gray-600 text-white  hover:bg-white hover:text-black border border-gray-600 w-full mx-auto p-1 cursor-pointer mt-4 "
             >
@@ -195,7 +196,7 @@ const Register = () => {
               <h1 className="text-[18px] font-medium pr-6">
                 Login With Google.
               </h1>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

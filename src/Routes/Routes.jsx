@@ -6,10 +6,8 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Membership from "../Pages/Membership/Membership";
 import PostDetails from "../Pages/PostDetails/PostDetails";
-
 import Dashboard from "../Layout/Dashboard";
 import MyProfile from "../Pages/Dashboard/MyProfile/MyProfile";
-
 import AddNewPost from "../Pages/Dashboard/AddNewPost/AddNewPost";
 import MyPost from "../Pages/Dashboard/MyPost/MyPost";
 import PrivateRoute from "./PrivateRoute";
